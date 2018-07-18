@@ -1,4 +1,4 @@
-package com.Hubspot.trial;
+package com.DoNotOpen;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;

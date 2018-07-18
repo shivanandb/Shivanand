@@ -1,0 +1,27 @@
+	 driver.findElement(By.xpath("//input[contains(@id,'username')]")).sendKeys(un);
+			 driver.findElement(By.xpath("//input[contains(@id,'password')]")).sendKeys(pwd);
+			 driver.findElement(By.xpath("//button[contains(@id,'loginBtn')]")).click();
+			 driver.getTitle().equals("Accounts Dashboard Beta");
+			 
+			 
+driver.getTitle().equals("Facebook");
+		driver.findElement(By.xpath("//input[contains(@name,'email')]")).sendKeys(email);	 
+		driver.findElement(By.xpath("//input[contains(@name,'pass')]")).sendKeys(pass);
+		driver.findElement(By.xpath("//input[contains(@value,'Log In')]")).click();
+		driver.findElement(By.xpath("//a[contains(@id,'findFriendsNav')]")).click();
+		driver.findElement(By.xpath("//input[contains(@placeholder,'Search')]")).sendKeys(data);
+		driver.findElement(By.xpath("//i[contains(@class,'585')]")).click();
+		
+		 String txt = driver.findElement(By.xpath("//div[contains(@class,'52eh')]")).getText();
+		
+		Assert.assertEquals(txt, data);
+		
+		driver.findElement(By.xpath("//div[contains(@id,'userNavigationLabel')]")).click();
+
+TestNG executing only bunch of test
+@BeforeSuite, @AfterSuite
+
+method to pass test into extent report
+
+test = extent.createTest("Provide meaningful name");
+

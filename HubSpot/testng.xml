@@ -2,9 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+
+<listeners>
+        <listener class-name="com.Launch.trial.RetryListenerClass"/>
+</listeners>
 <classes>
-      <!--  class name="com.Hubspot.trial.TrialProgram"/-->
+      
        <class name="com.Launch.trial.HubspotDemo"/>
+       <class name="com.Launch.trial.XL"/>
+        <class name="com.Launch.trial.RetryCountIfFailed"/>
+          <class name="com.Launch.trial.RetryFailedTestCases"/>
     </classes>
   </test> 
   

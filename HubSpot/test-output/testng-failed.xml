@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Hubspot.trial.TrialProgram">
+      <class name="com.Launch.trial.HubspotDemo">
         <methods>
-          <include name="TestCompany"/>
+          <include name="exitTest"/>
+          <include name="browserlaunch"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.Hubspot.trial.TrialProgram -->
+      </class> <!-- com.Launch.trial.HubspotDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
